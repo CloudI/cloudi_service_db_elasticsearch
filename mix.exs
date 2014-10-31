@@ -11,7 +11,7 @@ defmodule CloudIServiceDbElasticsearch do
   end
 
   defp deps do
-    [# TODO, erlasticsearch breaks compilation due to 17.x dict:dict/0 change
+    [# TODO, erlasticsearch dependencies cause problems here, need to get locked
      {:erlasticsearch,
       [git: "https://github.com/dieswaytoofast/erlasticsearch.git",
        tag: "1.6.3"]},
