@@ -3,7 +3,7 @@ defmodule CloudIServiceDbElasticsearch do
 
   def project do
     [app: :cloudi_service_db_elasticsearch,
-     version: "1.4.0",
+     version: "1.5.0",
      language: :erlang,
      description: description,
      package: package,
@@ -17,9 +17,9 @@ defmodule CloudIServiceDbElasticsearch do
        tag: "1.6.3"]},
      {:poolboy, "~> 1.4.0", override: true}, # override for 17.x types
      # confirm dependencies due to erlasticsearch
-     {:reltool_util, "~> 1.4.0", override: true},
+     {:reltool_util, "~> 1.5.0", override: true},
      {:jsx, "~> 2.1.1", override: true},
-     {:cloudi_core, "~> 1.4.0"}]
+     {:cloudi_core, "~> 1.5.0"}]
   end
 
   defp description do
